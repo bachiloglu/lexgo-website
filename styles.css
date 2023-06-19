@@ -26,7 +26,7 @@ body {
 
 section {
     position: relative;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 
@@ -107,15 +107,16 @@ input[type=submit] {
     color: var(--azul);
 }
 
-@media (max-width: 576px){
-    nav a{
+@media (max-width: 576px) {
+    nav a {
         display: none;
     }
-    nav a:first-child{
+
+    nav a:first-child {
         display: block;
     }
 
-    .btnSecondary{
+    .btnSecondary {
         display: none;
     }
 }
@@ -134,23 +135,23 @@ main .container {
     height: 100vh;
 }
 
-main .row{
+main .row {
     height: 100%;
 }
 
 .images {
-    position:relative;
+    position: relative;
 }
 
 main .images img {
     position: relative;
     width: 150%;
     height: auto;
-    margin-left:80px;
+    margin-left: 80px;
 
 }
 
-main .images img:nth-child(2){
+main .images img:nth-child(2) {
     position: absolute;
     width: 50%;
     height: auto;
@@ -197,20 +198,21 @@ input[type=submit] {
 }
 
 
-@media (max-width: 576px){
-    main{
+@media (max-width: 576px) {
+    main {
         padding-top: 100px;
         text-align: center;
     }
 
-    h1{
+    h1 {
         font-size: 42px;
     }
-    p{
+
+    p {
         font-size: 12px;
     }
 
-    main form{
+    main form {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -222,6 +224,7 @@ input[type=submit] {
         color: white;
         background-color: var(--azul);
     }
+
     .emailButton {
         width: 90%;
         margin-bottom: 80px;
@@ -236,19 +239,23 @@ input[type=submit] {
 
 }
 
-@media (max-width: 768px){
-    main, h1, h2, h3{
+@media (max-width: 768px) {
+
+    main,
+    h1,
+    h2,
+    h3 {
         padding-top: 100px;
         text-align: center;
     }
 
-    main form{
+    main form {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    h1{
+    h1 {
         font-size: 42px;
     }
 }
@@ -261,7 +268,7 @@ input[type=submit] {
     background-color: var(--grisPrimario);
 }
 
-.products{
+.products {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +291,7 @@ input[type=submit] {
     color: var(--grisTextos);
 }
 
-.clientsBrand{
+.clientsBrand {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     column-gap: 8px;
@@ -293,12 +300,13 @@ input[type=submit] {
     align-items: center;
     margin-top: 32px;
 }
+
 h2 {
     font-size: 48px;
     font-weight: bold;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .clientsBrand {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: (2, 1fr);
@@ -327,12 +335,12 @@ h2 {
     h2 {
         font-size: 32px;
     }
-    
+
 }
 
 /* Paso a paso */
 
-.stepByStep{
+.stepByStep {
     display: flex;
     justify-content: center;
 }
@@ -380,11 +388,11 @@ h4 {
         display: flex;
         flex-direction: column;
     }
-    
+
 }
 
 @media (max-width: 576px) {
-    .stepByStep .wrapper{
+    .stepByStep .wrapper {
         padding-top: 40px;
     }
 
@@ -393,20 +401,20 @@ h4 {
         display: flex;
         flex-direction: column;
     }
-    
+
 }
 
 /* Servicios */
 
-.products{
+.products {
     padding-bottom: 160px;
 }
 
-.products .wrapper .grayBg{
+.products .wrapper .grayBg {
     display: flex;
     flex-flow: column nowrap;
-  
-} 
+
+}
 
 
 .products .wrapper .text {
@@ -430,7 +438,7 @@ h4 {
     padding: 30px 75px;
 }
 
-.iconText{
+.iconText {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -545,11 +553,11 @@ h4 {
 .CTA {
     background-image: url("./assets/index/bg-cta.png");
     color: white;
-    margin-top:0;
- 
+    margin-top: 0;
+
 }
 
-.CTA .wrapper{
+.CTA .wrapper {
     width: 50%;
     align-items: flex-start;
     margin-left: 80px;
@@ -560,7 +568,7 @@ h4 {
     width: auto;
 }
 
-.CTA p{
+.CTA p {
     width: 70%;
     font-size: 16px;
 }
@@ -588,17 +596,19 @@ h4 {
 
 
 @media (max-width: 768px) {
-    .CTA .wrapper{
+    .CTA .wrapper {
         margin: 16px;
         align-items: flex-start;
         width: 80%;
     }
+
     .CTA h2 {
         padding-top: 0;
         margin-bottom: 16px;
         text-align: start;
     }
-    .whiteButton{
+
+    .whiteButton {
         display: inline-block;
         margin-bottom: 16px;
     }
@@ -606,25 +616,28 @@ h4 {
 
 
 @media (max-width: 576px) {
-    .CTA .wrapper{
+    .CTA .wrapper {
         margin: 0px 16px 16px 16px;
         align-items: flex-start;
         width: 90%;
     }
+
     .CTA h2 {
         padding-top: 0;
         margin-bottom: 16px;
         text-align: start;
     }
-    .whiteButton{
+
+    .whiteButton {
         width: 100%;
         display: inline-block;
         margin-bottom: 16px;
     }
+
     .strokedButton {
         width: 100%;
     }
-    
+
 
 }
 
@@ -641,29 +654,29 @@ footer {
     margin-top: 100px;
     padding-bottom: 30px;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "links info products"
-    "legal legal legal";
+    grid-template-areas:
+        "links info products"
+        "legal legal legal";
     max-width: 1180px;
     justify-items: center;
-    
+
 }
 
-.logoLinks{
+.logoLinks {
     grid-area: links;
 }
 
-.info{
+.info {
     grid-area: info;
 }
 
-.productsFooter{
+.productsFooter {
     grid-area: products;
 }
 
-.wrapperLegal{
+.wrapperLegal {
     grid-area: legal;
 }
 
@@ -712,24 +725,24 @@ footer h4 {
 }
 
 @media (max-width: 576px) {
-    footer{
-    grid-template-columns:1fr ;
-    grid-template-rows: 4fr;
-    grid-template-areas: 
-    "links"
-    "info"
-    "products"
-    "legal";
-    gap: 32px;
-    max-width: 1180px;
-    margin-left: 32px;
-    justify-items: start;
-}
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-template-areas:
+            "links"
+            "info"
+            "products"
+            "legal";
+        gap: 32px;
+        max-width: 1180px;
+        margin-left: 32px;
+        justify-items: start;
+    }
 
 
-.wrapperLegal a, p{
-    display: block;
-    font-size: 12px;
+    .wrapperLegal a,
+    p {
+        display: block;
+        font-size: 12px;
+    }
 }
-}
-    
