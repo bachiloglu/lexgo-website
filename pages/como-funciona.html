@@ -5,44 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../cf-styles.css">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Como funciona – Lexgo</title>
 </head>
 
 <body>
-modificación de prueba 
     <nav>
-        <div class="leftNav">
-            <a href="../index.html" class="logo"><img src="../assets/lexgo-logo.svg" alt="Logo de Lexgo"></a>
-            <a href="./como-funciona.html" class="option active">Cómo funciona</a>
-            <a href="./counsel.html" class="option">Counsel</a>
-            <a href="./global.html" class="option">Global</a>
-            <a href="./precios.html" class="option">Precios</a>
-        </div>
-        <div class="rightNav">
-            <button class="btnSecondary">Demo</button>
-            <button class="btnPrimary">Login</button>
+        <div class="wrapper">
+            <div class="leftNav">
+                <a href="../index.html" class="logo"><img src="../assets/lexgo-logo.svg" alt="Logo de Lexgo"></a>
+                <a href="./como-funciona.html" class="option active">Cómo funciona</a>
+                <a href="./counsel.html" class="option">Counsel</a>
+                <a href="./global.html" class="option">Global</a>
+                <a href="./precios.html" class="option">Precios</a>
+            </div>
+            <div class="rightNav">
+                <button class="btnSecondary">Demo</button>
+                <button class="btnPrimary">Login</button>
+            </div>
         </div>
     </nav>
 
     <main>
-        <div class="mainTexts">
-            <h1>Legal + tecnología</h1>
-            <p>Redefinimos lo legal para hacer los procesos de tu empresa más simples, transparentes y fáciles de
-                administrar para tu equipo.</p>
-            <div class="emailButton">
-                <form>
-                    <input type="text" class="email" value="Ingresa tu correo">
-                    <input type="submit" value="Comenzar">
-                </form>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                <div class="col">
+                    <h1>Legal + Tecnología</h1>
+                    <p>Redefinimos lo legal para hacer los procesos de tu empresa más simples, transparentes y fáciles
+                        de administrar para tu equipo.</p>
+                    <div class="emailButton">
+                        <form>
+                            <input type="email" class="email" value="¿Cuál es tu correo?">
+                            <input type="submit" value="Comenzar">
+                        </form>
+                    </div>
+                </div>
+                <div class="col images">
+                    <img src="../assets/como-funciona/lfm-03.png" alt="Vista simplicada del producto">
+                    <img src="../assets/como-funciona/lfm-02.png" alt="Vista simplificada de un detalle del producto">
+                </div>
             </div>
         </div>
-        <div class="images">
-            <img src="../assets/como-funciona/lfm-03.png" alt="Vista simplicada del producto">
-            <img src="../assets/como-funciona/lfm-02.png" alt="Vista simplificada de un detalle del producto">
-        </div>
     </main>
+
 
     <section class="details">
         <div class="videoDemo">
@@ -53,10 +61,10 @@ modificación de prueba
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
         </div>
         <div class="characteristics">
-            <div class="stepOne">
+            <div class="step">
                 <div class="texts">
                     <img src="../assets/como-funciona/icon-clipboard.svg" alt="">
-                    <h3>Te ayudamos a crear tu empresa o cargarla en tu cuenta:</h3>
+                    <h3 class="tituloDesc">Te ayudamos a crear tu empresa o cargarla en tu cuenta:</h3>
                     <p>Después de registrarte, te ayudaremos a constituir una nueva sociedad o a montarla en Lexgo.
                         (Pssst! Si es una empresa electrónica, sólo necesitaremos su RUT.)</p>
                 </div>
@@ -64,28 +72,44 @@ modificación de prueba
                     <img src="../assets/como-funciona/paso-01.png" alt="">
                 </div>
             </div>
-            <div class="stepTwo">
+            <div class="step desktop">
+                <div class="image">
+                    <img class="leftImg" src="../assets/como-funciona/paso-02.png" alt="">
+                </div>
                 <div class="texts">
                     <img src="../assets/como-funciona/icon-pointer.svg" alt="">
-                    <h3>Carga tus contratos, colaboradores e información:</h3>
+                    <h3 class="tituloDesc">Carga tus contratos, colaboradores e información:</h3>
+                    <p>Te ayudaremos a montar tus contratos, colaboradores e información de la empresa en tu cuenta.
+                        Incluso puedes solicitar nuestro Concierge Onboarding para que un especialista de Lexgo lo haga
+                        por ti en menos de un día hábil.</p>
+                </div>
+            </div>
+
+            <div class="step mobile">
+                <div class="texts">
+                    <img src="../assets/como-funciona/icon-pointer.svg" alt="">
+                    <h3 class="tituloDesc">Carga tus contratos, colaboradores e información:</h3>
                     <p>Te ayudaremos a montar tus contratos, colaboradores e información de la empresa en tu cuenta.
                         Incluso puedes solicitar nuestro Concierge Onboarding para que un especialista de Lexgo lo haga
                         por ti en menos de un día hábil.</p>
                 </div>
                 <div class="image">
-                    <img src="../assets/como-funciona/paso-02.png" alt="">
+                    <img class="leftImg" src="../assets/como-funciona/paso-02.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="stepThree">
-            <div class="texts">
-                <img src="../assets/como-funciona/icon-group.svg" alt="">
-                <h3>Colabora con tus abogados y solicita asesoría especializada cuando la necesites:</h3>
-                <p>Lexgo te permite solicitar y contratar asesorías especializadas a medida que las vayas necesitando,
-                    pudiendo colaborar y trabajar con tus abogados directamente en la plataforma.</p>
-            </div>
-            <div class="image">
-                <img src="../assets/como-funciona/paso-03.png" alt="">
+
+            <div class="step">
+                <div class="texts">
+                    <img src="../assets/como-funciona/icon-group.svg" alt="">
+                    <h3 class="tituloDesc">Colabora con tus abogados y solicita asesoría especializada cuando la
+                        necesites:</h3>
+                    <p>Lexgo te permite solicitar y contratar asesorías especializadas a medida que las vayas
+                        necesitando,
+                        pudiendo colaborar y trabajar con tus abogados directamente en la plataforma.</p>
+                </div>
+                <div class="image">
+                    <img src="../assets/como-funciona/paso-03.png" alt="">
+                </div>
             </div>
         </div>
         </div>
@@ -94,7 +118,7 @@ modificación de prueba
 
     <section class="CTA">
         <div class="wrapper">
-            <h2>Isncríbete para tu demo en vivo o cuando quieras</h2>
+            <h2>Inscríbete para tu demo<span class="saltoDeLinea"></span> en vivo o cuando quieras</h2>
             <p>Mira cómo Lexgo te ayuda a administrar toda la información de tu empresa y operación en un solo lugar, y
                 facilitar su crecimiento a lo largo del continente.</p>
             <div class="buttonsWrapper">
@@ -105,29 +129,28 @@ modificación de prueba
     </section>
 
     <footer>
-
         <div class="wrapper">
-            <div>
+            <div class="logoLinks">
                 <img src="../assets/lexgo-logo.svg" alt="Logo Lexgo">
                 <a href="https://www.facebook.com/lexgochile/">Facebook</a>
                 <a href="https://www.linkedin.com/company/lexgohq/">LinkedIn</a>
                 <a href="https://twitter.com/lexgoinc/">Twitter</a>
             </div>
-            <div>
+            <div class="info">
                 <h4>Información</h4>
-                <a href="../index.html">Home</a>
-                <a href="como-funciona.html">Como funciona</a>
+                <a href="index.html">Home</a>
+                <a href="pages/como-funciona.html">Como funciona</a>
             </div>
-            <div>
+            <div class="productsFooter">
                 <h4>Productos</h4>
-                <a href="counsel.html">Counsel</a>
-                <a href="global.html">Global</a>
+                <a href="pages/counsel.html">Counsel</a>
+                <a href="pages/global.html">Global</a>
             </div>
-        </div>
-        <div class="wrapperLegal">
-            <p>Todos los derechos reservados | © Lexgo 2023</p>
-            <a href="">Políticas de privacidad</a>
-            <a href="">Términos y servicios</a>
+            <div class="wrapperLegal">
+                <p>Todos los derechos reservados | © Lexgo 2023</p>
+                <a href="">Políticas de privacidad</a>
+                <a href="">Términos y servicios</a>
+            </div>
         </div>
 
     </footer>
