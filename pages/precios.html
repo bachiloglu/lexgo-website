@@ -5,53 +5,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../precios-styles.css">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Precios – Lexgo</title>
 </head>
 
 <body>
     <nav>
-            <div class="wrapper">
-                <div class="leftNav">
-                    <a href="../index.html" class="logo"><img src="../assets/lexgo-logo.svg" alt="Logo de Lexgo"></a>
-                    <a href="./como-funciona.html" class="option active">Cómo funciona</a>
-                    <a href="./counsel.html" class="option">Counsel</a>
-                    <a href="./global.html" class="option">Global</a>
-                    <a href="./precios.html" class="option">Precios</a>
+        <div class="wrapper">
+            <div class="leftNav">
+                <a href="../index.html" class="logo"><img src="../assets/lexgo-logo.svg" alt="Logo de Lexgo"></a>
+                <a href="./como-funciona.html" class="option active">Cómo funciona</a>
+                <a href="./counsel.html" class="option">Counsel</a>
+                <a href="./global.html" class="option">Global</a>
+                <a href="./precios.html" class="option">Precios</a>
+            </div>
+            <div class="rightNav">
+                <button class="btnSecondary">Demo</button>
+                <button class="btnPrimary">Login</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                <div class="col">
+                    <h1>Simplifica lo legal para tu empresa</h1>
+                    <p>Lexgo te ayuda a administrar todo lo legal tu empresa– clientes, trabajadores, proveedores y más
+                        – en
+                        un
+                        solo lugar y en total cumplimiento.</p>
+                    <button class="btnPrimary mt-4">Quiero saber más</button>
                 </div>
-                <div class="rightNav">
-                    <button class="btnSecondary">Demo</button>
-                    <button class="btnPrimary">Login</button>
+                <div class="col images">
+                    <img src="../assets/precios/image 18.png" alt="Vista simplicada del producto">
+
                 </div>
             </div>
-        </nav>
+        </div>
+    </main>
 
-
-    <footer>
-
+    <section class="grayBg clients">
         <div class="wrapper">
-            <div>
+            <p class="text">Confían en nosotros</p>
+            <div class="clientsBrand">
+                <img src="../assets/logos-clientes/algramo-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/deel-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/fintoc-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/firstjob-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/mudango-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/publicala-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/retailrocket-logo.png" alt="" class="brand">
+                <img src="../assets/logos-clientes/xepelin-logo.png" alt="" class="brand">
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="wrapper">
+            <h2>La Plataforma Legal</h2>
+            <div class="productGrid">
+                <div class="productCard lexgo">
+                    <div class="iconText">
+                        <h3>Lexgo</h3>
+                        <img src="../assets/precios/Logo.png" alt="">
+                        <p>Administra y automatiza tu operación y flujos de trabajo en un solo lugar.</p>
+                    </div>
+                    <ul>
+                        <li>Firma Electrónica Simple y Avanzada</li>
+                        <li>Modelos de Contratos</li>
+                        <li>Actualizaciones Legales Automáticas</li>
+                        <li>Plantillas Personalizadas</li>
+                        <li>Automatización Onboarding/Offboarding</li>
+                        <li>Administración Usuarios</li>
+                    </ul>
+                    <a href="">Ver más</a>
+                </div>
+
+                <div class="productCard counsel">
+                    <div class="iconText">
+                        <h3>Counsel</h3>
+                        <img src="../assets/index/icon-counsel.png" alt="">
+                        <p>Soporte legal según la etapa de tu empresa en América Latina.</p>
+                    </div>
+                    <ul>
+                        <li>Abogado Corporativo y Procurador Dedicados </li>
+                        <li>Administración del Registro de Accionistas</li>
+                        <li>Sesiones de Directorio y Reuniones</li>
+                        <li>Contratación</li>
+                        <li>Red de Especialistas</li>
+                        <li>Revisiones Documentales</li>
+                    </ul>
+            
+                        <a href="">Ver más</a>
+                </div>
+
+                <div class="productCard legal">
+                    <div class="iconText">
+                        <h3>Legal</h3>
+                        <img src="../assets/index/icon-legal.png" alt="">
+                        <p>Actuamos como tus apoderados en el extranjero.</p>
+                    </div>
+                    <ul>
+                        <li>Gestiones Administrativas</li>
+                        <li>Transferencias y Operaciones Bancarias</li>
+                        <li>Facturación</li>
+                        <li>Dirección Postal</li>
+                    </ul>
+                    <a href="">Ver más</a>
+                </div>
+            </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="wrapper">
+            <h3>Lexgo te ayuda a eliminar el trabajo pesado, para que te puedas enfocar en lo realmente importante</h3>
+            <div class="test">
+                <img src="../assets/precios/steve-carell.jpg" alt="">
+                <div class="textos">
+                    <h5>Lexgo simplificó enormemente el proceso legal para mí. En lugar de lidiar con interminables trámites y visitas a la oficina de un abogado, pude resolver mi asunto legal desde la comodidad de mi hogar. La plataforma me ayudó a ahorrar tiempo, dinero y estrés.
+                    </h5>
+                    <div class="elSujeto">
+                        <h6>Michael Scott</h6>
+                        <p>Director Regional</p>
+                        <p> Dunder Mifflin Chile</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="CTA">
+        <div class="wrapper">
+            <h2>Inscríbete para tu demo<span class="saltoDeLinea"></span> en vivo o cuando quieras</h2>
+            <p>Mira cómo Lexgo te ayuda a administrar toda la información de tu empresa y operación en un solo lugar, y
+                facilitar su crecimiento a lo largo del continente.</p>
+            <div class="buttonsWrapper">
+                <button class="whiteButton">Solicita tu demo</button>
+                <button class="strokedButton">Mira video tour</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="wrapper">
+            <div class="logoLinks">
                 <img src="../assets/lexgo-logo.svg" alt="Logo Lexgo">
                 <a href="https://www.facebook.com/lexgochile/">Facebook</a>
                 <a href="https://www.linkedin.com/company/lexgohq/">LinkedIn</a>
                 <a href="https://twitter.com/lexgoinc/">Twitter</a>
             </div>
-            <div>
+            <div class="info">
                 <h4>Información</h4>
-                <a href="../index.html">Home</a>
-                <a href="como-funciona.html">Como funciona</a>
+                <a href="index.html">Home</a>
+                <a href="pages/como-funciona.html">Como funciona</a>
             </div>
-            <div>
+            <div class="productsFooter">
                 <h4>Productos</h4>
-                <a href="counsel.html">Counsel</a>
-                <a href="global.html">Global</a>
+                <a href="pages/counsel.html">Counsel</a>
+                <a href="pages/global.html">Global</a>
             </div>
-        </div>
-        <div class="wrapperLegal">
-            <p>Todos los derechos reservados | © Lexgo 2023</p>
-            <a href="">Políticas de privacidad</a>
-            <a href="">Términos y servicios</a>
+            <div class="wrapperLegal">
+                <p>Todos los derechos reservados | © Lexgo 2023</p>
+                <a href="">Políticas de privacidad</a>
+                <a href="">Términos y servicios</a>
+            </div>
         </div>
 
     </footer>

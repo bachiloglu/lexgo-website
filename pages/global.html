@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../global-styles.css">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Global – Lexgo</title>
 </head>
@@ -13,50 +15,129 @@
 <body>
 
     <nav>
-            <div class="wrapper">
-                <div class="leftNav">
-                    <a href="../index.html" class="logo"><img src="../assets/lexgo-logo.svg" alt="Logo de Lexgo"></a>
-                    <a href="./como-funciona.html" class="option active">Cómo funciona</a>
-                    <a href="./counsel.html" class="option">Counsel</a>
-                    <a href="./global.html" class="option">Global</a>
-                    <a href="./precios.html" class="option">Precios</a>
+        <div class="wrapper">
+            <div class="leftNav">
+                <a href="../index.html" class="logo"><img src="../assets/lexgo-logo.svg" alt="Logo de Lexgo"></a>
+                <a href="./como-funciona.html" class="option active">Cómo funciona</a>
+                <a href="./counsel.html" class="option">Counsel</a>
+                <a href="./global.html" class="option">Global</a>
+                <a href="./precios.html" class="option">Precios</a>
+            </div>
+            <div class="rightNav">
+                <button class="btnSecondary">Demo</button>
+                <button class="btnPrimary">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                <div class="col">
+                    <h1>Global - Contrata profesionales extranjeros en cualquier parte del mundo</h1>
+                    <p>Con Global puedes contratar con profesionales extranjeros de forma rápida y sencilla. Te ayudamos
+                        a preparar tus contratos, asegurar su compliance y facilitar los pagos e impuestos con nuestra
+                        plataforma.</p>
+                    <button class="btnGlobal mt-4">Quiero saber más</button>
                 </div>
-                <div class="rightNav">
-                    <button class="btnSecondary">Demo</button>
-                    <button class="btnPrimary">Login</button>
+                <div class="col images">
+                    <img src="../assets/global/hero.png" alt="Vista simplicada del producto">
+
                 </div>
             </div>
-        </nav>
+        </div>
+    </main>
+
+    <section class="minutos">
+        <div class="wrapper">
+            <h2>Tu equipo Global en cuestión de minutos</h2>
+            <img src="../assets/global/lfm-03.png" alt="">
+        </div>
+        </div>
+    </section>
+
+    <section class="tributario grayBg">
+        <div class="wrapper">
+            <div class="textos">
+                <div class="first">
+                    <h3>Deja el cumplimiento tributario en nuestras manos</h3>
+                    <p>¿Impuesto Adicional? Deja las preocupaciones a un lado. En nuestra plataforma puedes calcular, e
+                        incluso reducir, tus obligaciones tributarias por servicios prestados desde el extranjero.</p>
+                </div>
+                <div class="second">
+                    <h3>Gestiona tus pagos desde un solo lugar</h3>
+                    <p>Deja de realizar de forma manual el pago y mantención de cada proveedor – ¡sobre todo cuando
+                        están ubicados en distintos países del mundo! Con Global podrás hacer un solo pago y nosotros
+                        nos encargaremos de pagarle a tu equipo.</p>
+                </div>
+            </div>
+            <div>
+                <img src="../assets/global/Group 1000003780.png" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="uso">
+        <div class="wrapper">
+            <h2>¿Por que usar Global al hacer crecer tu equipo internacionalmente?</h2>
+            <div class="cardWrapper">
+                <div class="card">
+                    <img src="../assets/global/Frame 1000003760.png" alt="">
+                    <h3>Contratos que dan cumplimiento normativo en Chile y en el extranjero</h3>
+                </div>
+                <div class="card">
+                    <img src="../assets/global/Frame 1000003761.png" alt="">
+                    <h3>Cálculo y reducción de impuestos</h3>
+                </div>
+                <div class="card">
+                    <img src="../assets/global/Frame 1000003762.png" alt="">
+                    <h3>Unifica tus pagos</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="CTA">
+        <div class="wrapper">
+            <h2>Inscríbete para tu demo<span class="saltoDeLinea"></span> vivo o cuando quieras</h2>
+            <p>Mira cómo Lexgo te ayuda a administrar toda la información de tu empresa y operación en un solo lugar, y
+                facilitar su crecimiento a lo largo del continente.</p>
+            <div class="buttonsWrapper">
+                <button class="whiteButton">Solicita tu demo</button>
+                <button class="strokedButton">Mira video tour</button>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
-
         <div class="wrapper">
-            <div>
+            <div class="logoLinks">
                 <img src="../assets/lexgo-logo.svg" alt="Logo Lexgo">
                 <a href="https://www.facebook.com/lexgochile/">Facebook</a>
                 <a href="https://www.linkedin.com/company/lexgohq/">LinkedIn</a>
                 <a href="https://twitter.com/lexgoinc/">Twitter</a>
             </div>
-            <div>
+            <div class="info">
                 <h4>Información</h4>
-                <a href="../index.html">Home</a>
-                <a href="como-funciona.html">Como funciona</a>
+                <a href="index.html">Home</a>
+                <a href="pages/como-funciona.html">Como funciona</a>
             </div>
-            <div>
+            <div class="productsFooter">
                 <h4>Productos</h4>
-                <a href="counsel.html">Counsel</a>
-                <a href="global.html">Global</a>
+                <a href="pages/counsel.html">Counsel</a>
+                <a href="pages/global.html">Global</a>
             </div>
-        </div>
-        <div class="wrapperLegal">
-            <p>Todos los derechos reservados | © Lexgo 2023</p>
-            <a href="">Políticas de privacidad</a>
-            <a href="">Términos y servicios</a>
+            <div class="wrapperLegal">
+                <p>Todos los derechos reservados | © Lexgo 2023</p>
+                <a href="">Políticas de privacidad</a>
+                <a href="">Términos y servicios</a>
+            </div>
         </div>
 
     </footer>
-
 </body>
 
 </html>
