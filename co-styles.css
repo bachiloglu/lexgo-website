@@ -48,9 +48,14 @@ h2 {
     font-weight: bold;
 }
 
-@media (max-width: 576px) & (max-width: 768px) {
+@media (max-width: 576px) {
     .saltoDeLinea{
         display: none;
+    }
+
+    .wrapper {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
 
@@ -67,7 +72,11 @@ h2 {
 
 /* NAVBAR */
 
+
+
 nav {
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: rgba(255, 255, 255, .55);
     padding: 20px 20px;
@@ -78,13 +87,12 @@ nav {
     backdrop-filter: blur(20px);
 }
 
-
 nav .wrapper {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
 
 .leftNav {
     display: flex;
@@ -130,6 +138,12 @@ input[type=submit] {
 
 .btnPrimary {
     background-color: var(--azul);
+    color: white;
+}
+
+.btnGlobal {
+    background-color: #FB6D00;
+    border: none;
     color: white;
 }
 
@@ -400,6 +414,22 @@ h2 {
     margin-bottom: 0;
 }
 
+@media (max-width: 576px) {
+    .features{
+        margin-top:0;
+    }
+    
+    .feature{
+        width: 100%;
+    }
+
+    .feature h3 {
+        padding-top: 0;
+    }
+    
+}
+
+
 /* Counsels */
 
 .counsels {
@@ -442,6 +472,17 @@ h2 {
     color: var(--grisTextos)
 }
 
+@media (max-width: 576px) {
+    .wrapperCards{
+        flex-direction: column;
+    }
+
+    .counselCard{
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* details */
 
 .details {
@@ -480,6 +521,21 @@ h2 {
 .details p {
     color: var(--grisTextos);
 }
+
+@media (max-width: 576px){
+    .details .wrapper{
+        flex-direction: column;
+    }
+
+    .details .textos{
+        width: 100%;
+    }
+
+    .details .img{
+        width: 100%;
+    }
+}
+
 
 /* CTA final */
 
