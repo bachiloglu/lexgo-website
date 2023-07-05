@@ -1,10 +1,11 @@
 {
-  "name": "lexgo",
+  "name": "lexgo-website-entrega-2",
   "version": "1.0.0",
   "description": "Este es el README.md del sitio web de Lexgo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wsass": "sass --watch ./scss/styles.scss ./styles.css"
   },
   "keywords": [],
   "author": "",

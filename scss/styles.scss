@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+@import "./navbar";
+@import "./footer";
+@import "./clientes";
+@import "./CTA";
+@import "./por_pagina/index";
+@import "./por_pagina/como-funciona";
+@import "./por_pagina/precios";
+@import "./por_pagina/global";
+@import "./por_pagina/counsel";
+@import "./animaciones";
+
+
+$azul: #4000D4;
+$naranjoGlobal: 251, 109, 0;
+$violetaCounsel: 100, 6, 183;
+$grisPrimario: #F6F6F8;
+$grisTextos: #888B94;
+$negro: #14192B;
+$verdeKickstart: 6, 91, 112;
+$rojoLegal: 193, 0, 0;
+
+* {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+section{
+    position: relative;
+    margin-top: 100px;
+    .wrapper{
+        width: 100%;
+        max-width: 1080px;
+        padding: 80px 0px 80px 0px;
+    }
+}
+
+.grayBg {
+    background-color: $grisPrimario;
+}
+
+.saltoDeLinea{
+    display: block;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .saltoDeLinea{
+        display: none;
+    }
+}
+
+
+
+

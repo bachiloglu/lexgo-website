@@ -1,0 +1,164 @@
+/* Main */
+
+.btnCounsel{
+    background-color: #6406B7;
+    border: none;
+    color: white;
+}
+
+/* Features */
+
+.features{
+    display: flex;
+    justify-content: center;
+
+    .gridFeatures {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .feature {
+        padding: 36px 36px 36px 36px;
+        background-color: #f8f8f8;
+        margin-bottom: 24px;
+        border-radius: 24px;
+        width: 49%;
+    
+        h3{
+            font-weight: bold;
+        }
+    
+        p{
+            color: var(--grisTextos);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.textWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 576px) {
+    .features{
+        margin-top:0;
+    }
+    
+    .feature{
+        width: 100%;
+        h3 {
+            padding-top: 0;
+        }
+    }
+    
+}
+
+
+/* Counsels */
+
+.counsels {
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .counselCard{
+        width: 32%;
+        height: 300px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+            border-radius: 16px;
+        } 
+        h4{
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        h5{
+            color: var(--grisTextos)
+        }
+    }
+}
+
+.wrapperCards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top:80px;
+    gap: 32px;
+}
+
+
+@media (max-width: 576px) {
+    .wrapperCards{
+        flex-direction: column;
+    }
+
+    .counselCard{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* details */
+
+.details {
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+    }
+
+    .textos{
+        width: 60%;
+    }
+
+    .img {
+        width: 40%;
+        max-width: 100%;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    h4{
+        font-weight: bold;
+    }
+
+    p {
+        color: var(--grisTextos);
+    }
+}
+
+@media (max-width: 576px){
+    .details .wrapper{
+        flex-direction: column;
+    }
+
+    .details .textos{
+        width: 100%;
+    }
+
+    .details .img{
+        width: 100%;
+    }
+}

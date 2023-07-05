@@ -1,0 +1,365 @@
+:root {
+    --azul: #4000D4;
+    --naranjoGlobal: 251, 109, 0;
+    --violetaCounsel: 100, 6, 183;
+    --grisPrimario: #F6F6F8;
+    --grisTextos: #888B94;
+    --negro: #14192B;
+    --verdeKickstart: 6, 91, 112;
+    --rojoLegal: 193, 0, 0;
+
+}
+
+main {
+    position: relative;
+    overflow-x: hidden;
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: auto;
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+
+    .row {
+        height: 100%;
+    }
+
+    .images img {
+        position: relative;
+        width: 150%;
+        height: auto;
+        margin-left: 80px;
+    }
+
+    .images img:nth-child(2) {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        bottom: -60px;
+        left: -40px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6rem;
+        color: var(--grisTextos);
+    }
+}
+
+.images {
+    position: relative;
+}
+
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+.emailButton {
+    margin-top: 16px;
+    width: 80%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 12px;
+}
+
+input {
+    border: none;
+
+    &[type=email] {
+        color: var(--grisTextos);
+        display: inline-block;
+        height: 100%;
+    }
+
+    &[type=submit] {
+        float: right;
+        color: white;
+        background-color: var(--azul);
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    main {
+        padding-top: 100px;
+        text-align: center;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    input[type=submit] {
+        font-size: 14px;
+        float: right;
+        color: white;
+        background-color: var(--azul);
+    }
+
+    .emailButton {
+        width: 90%;
+        margin-bottom: 80px;
+    }
+
+    input[type=email] {
+        color: var(--grisTextos);
+        display: inline-block;
+        height: auto;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    main,
+    h1,
+    h2,
+    h3 {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    main form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+/* Paso a paso */
+
+.stepByStep {
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+
+.stepWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 38px;
+    gap: 32px;
+    .home {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 20px;
+    
+        img {
+            max-width: 200px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+.stepDesc {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .stepWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .stepByStep .wrapper {
+        padding-top: 40px;
+    }
+
+
+    .stepWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Servicios */
+
+.products {
+    padding-bottom: 160px;
+
+    .wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        
+        .text {
+            width: 75%;
+            text-align: center;
+            color: var(--grisTextos);
+        }
+    }
+    
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+
+    .productCard {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6px;
+        padding: 30px 75px;
+    }
+
+    .kickstart {
+        background-color: rgba(var(--verdeKickstart), 0.1);
+        border: 1px solid rgb(var(--verdeKickstart));
+    }
+    
+    .counsel {
+        background-color: rgba(var(--violetaCounsel), 0.1);
+        border: 1px solid rgb(var(--violetaCounsel));
+    }
+    
+    .legal {
+        background-color: rgba(var(--rojoLegal), 0.1);
+        border: 1px solid rgb(var(--rojoLegal));
+    }
+    
+    .global {
+        background-color: rgba(var(--naranjoGlobal), 0.1);
+        border: 1px solid rgb(var(--naranjoGlobal));
+    }
+    
+}
+
+
+.iconText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    img {
+        max-width: 30px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        color: var(--grisTextos);
+    }
+    
+}
+
+
+
+
+.buttonSide button {
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.kickstart button {
+    background-color: rgb(var(--verdeKickstart));
+}
+
+.counsel button {
+    background-color: rgb(var(--violetaCounsel));
+}
+
+.legal button {
+    background-color: rgb(var(--rojoLegal));
+}
+
+.global button {
+    background-color: rgb(var(--naranjoGlobal));
+}
+
+
+
+@media (max-width: 576px) {
+    .productGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .productCard {
+        width: 80%;
+        border-radius: 6px;
+        padding: 24px 25px;
+
+    }
+
+    .iconText h3 {
+        padding-top: 8px;
+        align-items: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .productGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .productCard {
+        margin: 0px 8px 0px 8px;
+        border-radius: 6px;
+        padding: 24px 24px;
+        width: 80%;
+    }
+
+    .iconText h3 {
+        padding-top: 8px;
+        align-items: left;
+    }
+}

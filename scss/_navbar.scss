@@ -1,0 +1,79 @@
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .55);
+    padding: 20px 20px;
+    border-bottom: 0.65px solid #C6C6C6;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    z-index: 200;
+    backdrop-filter: blur(20px);
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--negro);
+        text-decoration: none;
+        margin-left: 20px;
+    }
+}
+
+.leftNav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    .logo {
+        padding-right: 30px;
+    }
+}
+
+button {
+    border-radius: 3px;
+    padding: 12px 24px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.rightNav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    align-content: center;
+
+}
+
+.btnSecondary,
+.btnPrimary,
+input[type=submit] {
+    padding: 12px 24px;
+    border: 1px solid var(--azul);
+    border-radius: 3px;
+}
+
+.btnPrimary {
+    background-color: var(--azul);
+    color: white;
+}
+
+.btnSecondary {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--azul);
+}
+
+@media (max-width: 576px) {
+    nav a {
+        display: none;
+    }
+
+    nav a:first-child {
+        display: block;
+    }
+
+    .btnSecondary {
+        display: none;
+    }
+}

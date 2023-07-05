@@ -1,0 +1,87 @@
+footer {
+    display: flex;
+    justify-content: center;
+    .grid {
+        max-width: 1180px;
+    }
+    .wrapper {
+        margin-top: 100px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "links info products"
+            "legal legal legal";
+        max-width: 1180px;
+        justify-items: start;
+        div {
+            margin-right: 120px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: var(--grisTextos);
+    }
+    a, img{
+        display: block;
+        margin-top: 8px;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+.logoLinks {
+    grid-area: links;
+}
+
+.info {
+    grid-area: info;
+}
+
+.productsFooter {
+    grid-area: products;
+}
+
+
+.wrapperLegal {
+    grid-area: legal;
+    display: block;
+    margin-top: 48px;
+    font-size: 16px;
+    color: var(--grisTextos);
+    a, p {
+        display: inline;
+        margin-right: 75px;
+    }
+    a{
+        text-decoration: underline;
+        color: var(--grisTextos);
+    }
+}
+
+@media (max-width: 576px) {
+    footer .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-template-areas:
+            "links"
+            "info"
+            "products"
+            "legal";
+        gap: 32px;
+        max-width: 1180px;
+        margin-left: 32px;
+        justify-items: start;
+    }
+
+
+    .wrapperLegal a,
+    p {
+        display: block;
+        font-size: 12px;
+    }
+}

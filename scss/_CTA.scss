@@ -1,0 +1,87 @@
+.CTA {
+    background-image: url("./assets/index/bg-cta.png");
+    background-size: cover;
+    color: white;
+    margin-top: 0;
+    .wrapper {
+        width: 50%;
+        align-items: flex-start;
+        margin-left: 80px;
+    }
+    h2 {
+        margin-bottom: 16px;
+        width: auto;
+    }
+    p {
+        width: 70%;
+        font-size: 16px;
+    }
+
+}
+
+.buttonsWrapper {
+    margin-top: 32px;
+}
+
+.whiteButton {
+    background-color: white;
+    color: var(--azul);
+    border: 1px solid white;
+    margin-right: 8px;
+    &:hover {
+        background-color: var(--grisPrimario);
+    }
+}
+
+.strokedButton {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white
+}
+
+
+@media (max-width: 768px) {
+    .CTA .wrapper {
+        margin: 16px;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .CTA h2 {
+        padding-top: 0;
+        margin-bottom: 16px;
+        text-align: start;
+    }
+
+    .whiteButton {
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .CTA .wrapper {
+        margin: 0px 16px 16px 16px;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .CTA h2 {
+        padding-top: 0;
+        margin-bottom: 16px;
+        text-align: start;
+    }
+
+    .whiteButton {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+
+    .strokedButton {
+        width: 100%;
+    }
+
+
+}
