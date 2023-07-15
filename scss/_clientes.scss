@@ -47,10 +47,6 @@
 }
 
 @media (max-width: 576px) {
-    .text {
-        display: flex;
-        justify-content: center;
-    }
 
     .clientsBrand {
         grid-template-columns: repeat(2, 1fr);

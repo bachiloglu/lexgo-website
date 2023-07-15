@@ -1,36 +1,8 @@
-main {
-    padding-top: 100pxa;
-    position: relative;
-    overflow-x: hidden;
-    
-    .container {
-        display: flex;
-        align-items: center;
-    }
-
-    .row {
-        height: 100%;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 1.6rem;
-        color: var(--grisTextos);
-    }
-    .images {
-        position: relative;
-        img{
-            width: 600px;
-        }
-    }
-}
-
 h1 {
     font-size: 56px;
     margin-bottom: 16px;
     font-weight: 700;
 }
-
 
 
 
@@ -73,14 +45,6 @@ h1 {
         }
     }
 
-    h1 {
-        font-size: 42px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
     input[type=submit] {
         font-size: 14px;
         float: right;
@@ -104,20 +68,6 @@ h1 {
 
 /* Servicios */
 
-.products {
-    padding-bottom: 100px;
-
-    .wrapper {
-        display: flex;
-        flex-flow: column nowrap;
-
-        .text {
-            width: 75%;
-            text-align: center;
-        }
-    
-    }
-}
 
 
 .pricing {
@@ -141,6 +91,23 @@ h1 {
         }
         
     }
+}
+
+@media (max-width: 576px) {
+
+    .products{
+        padding-bottom: 40px;
+    }
+    
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        .productCard{
+            width: 100%;
+        }
+    }
+
+
 }
 
 
@@ -217,12 +184,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .test{
-        display: flex;
-        height: 370px;
-    }
-
     h3 {
         font-size: 32px;
         font-weight: bold;
@@ -231,6 +192,12 @@ h1 {
         margin-bottom: 80px;
     }
 
+    .test{
+        display: flex;
+        height: 370px;
+    }
+
+    
     img {
         width: 48%;
         max-width: 400px;
@@ -260,4 +227,35 @@ h1 {
         font-weight: bold;
     }
     
+}
+
+@media (max-width: 576px) {
+    .testimonial{
+        padding-top: 20px;
+        h3{
+            width: 100%;
+        }
+        .test{
+            flex-direction: column;
+            height: auto;
+        }
+        img{
+            width: 100%;
+            max-width: none;
+        }
+        .textos{
+            margin-left: 0px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            h5{
+                margin-bottom: 16px;
+            }
+            .elSujeto{
+                p{
+                    text-align: left;
+                }
+            }
+    
+        }
+    }
 }

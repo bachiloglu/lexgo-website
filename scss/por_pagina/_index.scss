@@ -18,7 +18,7 @@ main {
         display: flex;
         align-items: center;
         height: auto;
-        margin-top: 120px;
+        margin-top: 10px;
         margin-bottom: 200px;
     }
 
@@ -85,9 +85,20 @@ input {
     }
 }
 
+.textWrapper{
+    p{
+        color: var(--grisTextos);
+        font-size: 16px;
+        width: 75%;
+        text-align: center;
+    }
+}
+
+
 
 
 @media (max-width: 576px) {
+    
     main {
         padding-top: 100px;
         text-align: center;
@@ -95,6 +106,12 @@ input {
         form {
             display: flex;
             align-items: center;
+            justify-content: center;
+        }
+        .row{
+            width: 100%;
+        }
+        .container{
             justify-content: center;
         }
     }
@@ -105,6 +122,11 @@ input {
 
     p {
         font-size: 12px;
+        color: var(--grisTextos);
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        
     }
 
     input[type=submit] {
@@ -228,7 +250,7 @@ h4 {
         flex-flow: column nowrap;
         
         .text {
-            width: 75%;
+            width: 90%;
             text-align: center;
             color: var(--grisTextos);
         }
@@ -328,13 +350,13 @@ h4 {
         gap: 32px;
         justify-content: center;
         justify-items: center;
-    }
 
-    .productCard {
-        width: 80%;
-        border-radius: 6px;
-        padding: 24px 25px;
-
+        .productCard {
+            width: 90%;
+            border-radius: 6px;
+            padding: 24px;
+    
+        }
     }
 
     .iconText h3 {

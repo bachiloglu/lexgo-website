@@ -18,15 +18,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .feature {
-        padding: 36px 36px 36px 36px;
+        padding: 36px;
         background-color: #f8f8f8;
         margin-bottom: 24px;
         border-radius: 24px;
-        width: 49%;
+        width: 90%;
     
         h3{
             font-weight: bold;
@@ -35,6 +35,7 @@
         p{
             color: var(--grisTextos);
             margin-bottom: 0;
+            font-size: 16px;
         }
     }
 }
@@ -73,7 +74,7 @@
     
     }
     .counselCard{
-        width: 32%;
+        width: 90%;
         height: 300px;
 
         img {
@@ -99,6 +100,7 @@
     width: 100%;
     margin-top:80px;
     gap: 32px;
+    align-items: center;
 }
 
 
@@ -106,11 +108,15 @@
     .wrapperCards{
         flex-direction: column;
     }
+    .counsels{
+        .counselCard{
 
-    .counselCard{
-        width: 100%;
-        height: auto;
+            width: 90%;
+            height: auto;
+            margin-bottom: 16px;
+        }
     }
+    
 }
 
 /* details */
@@ -154,11 +160,26 @@
         flex-direction: column;
     }
 
-    .details .textos{
-        width: 100%;
+    .details{
+        h3{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+            font-size: 16px;
+        }
+        .textos{
+            width: 100%;
+            .first, .second{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 
-    .details .img{
-        width: 100%;
+    .details{
+        .img, img{
+            width: 100%;
+        }
     }
 }
