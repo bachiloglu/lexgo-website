@@ -85,3 +85,15 @@ footer {
         font-size: 12px;
     }
 }
+
+@media (max-width: 768px) {
+    .characteristics{
+        overflow-x: hidden;
+    }
+
+    footer{
+        .wrapper{
+            width: 90%;
+        }
+    }
+}

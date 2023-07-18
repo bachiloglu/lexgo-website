@@ -160,10 +160,26 @@ input {
         text-align: center;
     }
 
-    main form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    main {
+        padding-top: 100px;
+        text-align: center;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .row{
+            width: 100%;
+        }
+        .container{
+            justify-content: center;
+        }
+        .images{
+            img{
+                margin-left: 0px;
+            }
+        }
     }
 
     h1 {

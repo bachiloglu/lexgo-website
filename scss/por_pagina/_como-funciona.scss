@@ -15,7 +15,6 @@ main {
         position: relative;
         width: 100%;
         height: auto;
-        margin-left: 80px;
     
     }
 
@@ -153,6 +152,7 @@ input {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
+    overflow-x:hidden;
 
     .videoDemo {
         display: flex;

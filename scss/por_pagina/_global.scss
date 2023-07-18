@@ -43,7 +43,7 @@
         .first, .second{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
         }
         p{
             font-size: 16px;
@@ -61,15 +61,52 @@
         overflow-x: hidden;
     }
 
-    .tributario .wrapper{
-        flex-direction: column;
-    }
-    .tributario img{
-        width: 90%;
+    .tributario{
+        .wrapper{
+            flex-direction: column;
+        }
+        img{
+            width: 90%;
+        }
     }
 
     .minutos img{
         width: 90%;
+    }
+
+    .textos {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        p{
+            font-size: 16px;
+            color: var(--grisTextos);
+            text-align: left;
+        }
+
+        div {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .minutos img{
+        width: 100%;
+    }
+
+    .tributario{
+        .wrapper{
+            flex-direction: column;
+        }
+        .textos{
+            .first, .second{
+                h3{
+                    text-align: left;
+                }
+            } 
+        }
     }
 }
 
@@ -105,6 +142,21 @@
     }
 }
 
+
+@media (max-width: 768px){
+.cardWrapper{
+    flex-direction: column;
+    align-items: center;
+    .card{
+        width: 90%;
+        h3{
+            font-size: 28px;
+            padding: 8px;
+        }
+    }
+}
+}
+
 @media (max-width: 576px) {
     .cardWrapper{
         flex-direction: column;
@@ -114,6 +166,7 @@
             width: 100%;
 
             h3{
+                font-size: 18px;
                 padding-top: 16px;
             }
         }
@@ -122,4 +175,5 @@
     .uso .wrapper{
         width: 90%;
     }
+    
 }

@@ -7,6 +7,7 @@ h1 {
 
 
 @media (max-width: 768px) {
+
     main,
     h1,
     h2,
@@ -25,14 +26,15 @@ h1 {
         font-size: 42px;
     }
 
-    .images{
+    .images {
         margin-top: 80px;
     }
 
     main .images img {
         margin-left: 0px;
+    }
 }
-}
+
 @media (max-width: 576px) {
     main {
         padding-top: 100px;
@@ -84,25 +86,44 @@ h1 {
         padding: 30px 24px;
         justify-content: space-around;
 
-        li{
+        li {
             color: var(--grisTextos);
             margin-bottom: 4px;
             font-size: 14px;
         }
-        
+
     }
 }
 
 @media (max-width: 576px) {
 
-    .products{
+    .products {
         padding-bottom: 40px;
     }
-    
-    .pricing{
+
+    .pricing {
         flex-direction: column;
         align-items: center;
-        .productCard{
+
+        .productCard {
+            width: 100%;
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .products {
+        padding-bottom: 40px;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+
+        .productCard {
             width: 100%;
         }
     }
@@ -140,6 +161,7 @@ h1 {
 .kickstart {
     background-color: rgba(var(--verdeKickstart), 0.1);
     border: 1px solid rgb(var(--verdeKickstart));
+
     a {
         color: rgb(var(--verdeKickstart));
     }
@@ -148,6 +170,7 @@ h1 {
 .counsel {
     background-color: rgba(var(--violetaCounsel), 0.1);
     border: 1px solid rgb(var(--violetaCounsel));
+
     a {
         color: rgb(var(--violetaCounsel));
     }
@@ -156,6 +179,7 @@ h1 {
 .legal {
     background-color: rgba(var(--rojoLegal), 0.1);
     border: 1px solid rgb(var(--rojoLegal));
+
     a {
         color: rgb(var(--rojoLegal));
     }
@@ -164,6 +188,7 @@ h1 {
 .global {
     background-color: rgba(var(--naranjoGlobal), 0.1);
     border: 1px solid rgb(var(--naranjoGlobal));
+
     a {
         color: rgb(var(--naranjoGlobal));
     }
@@ -172,6 +197,7 @@ h1 {
 .lexgo {
     background-color: rgba(0, 102, 255, 0.1);
     border: 1px solid rgb(0, 102, 255);
+
     a {
         color: rgb(0, 102, 255);
     }
@@ -179,11 +205,12 @@ h1 {
 
 /*  Testimonial */
 
-.testimonial{
+.testimonial {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h3 {
         font-size: 32px;
         font-weight: bold;
@@ -192,12 +219,12 @@ h1 {
         margin-bottom: 80px;
     }
 
-    .test{
+    .test {
         display: flex;
         height: 370px;
     }
 
-    
+
     img {
         width: 48%;
         max-width: 400px;
@@ -212,50 +239,88 @@ h1 {
         margin-left: 40px;
     }
 
-    h5{
+    h5 {
         font-size: 22px;
         line-height: 2rem;
     }
 
-    h6, p{
+    h6,
+    p {
         font-size: 18px;
         color: var(--azul);
         margin-bottom: 0;
     }
 
-    h6{
+    h6 {
         font-weight: bold;
     }
-    
+
 }
 
 @media (max-width: 576px) {
-    .testimonial{
+    .testimonial {
         padding-top: 20px;
-        h3{
+
+        h3 {
             width: 100%;
         }
-        .test{
+
+        .test {
             flex-direction: column;
             height: auto;
         }
-        img{
+
+        img {
             width: 100%;
             max-width: none;
         }
-        .textos{
+
+        .textos {
             margin-left: 0px;
             margin-top: 16px;
             margin-bottom: 16px;
-            h5{
+
+            h5 {
                 margin-bottom: 16px;
             }
-            .elSujeto{
-                p{
+
+            .elSujeto {
+                p {
                     text-align: left;
                 }
             }
-    
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        .test {
+            flex-direction: column;
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: none;
+        }
+
+        .textos {
+            margin-left: 0px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+
+            h5 {
+                margin-bottom: 16px;
+            }
+
+            .elSujeto {
+                p {
+                    text-align: left;
+                }
+            }
+
         }
     }
 }
